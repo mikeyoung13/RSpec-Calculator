@@ -39,6 +39,15 @@ describe Calculator do
     subject.add(2,3,4).should == 9
   end
   
-end
+  it "five numbers" do
+    subject.add(2,3,4,5,6).should == 20
+  end  
+  end
+    context "handling subtraction with" do
+      
+      it "two numbers" do
+        subject.subtract(5,2).should == 3
+      end
+    end
   
 end
