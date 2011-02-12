@@ -29,7 +29,15 @@ describe Calculator do
   
   it "positive and negative number" do
     subject.add(7,-2).should == 5
-  end  
+  end
+  
+  it "two negative numbers" do
+    subject.add(-2,-3).should == -5
+  end
+  
+  it "three numbers" do
+    subject.add(2,3,4).should == 9
+  end
   
 end
   
